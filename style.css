@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente el formulario */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#employeeForm {
+    width: 80%; /* Ancho del formulario */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+#employeeForm div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#employeeForm label {
+    width: 150px;
+    text-align: right;
+}
+
+#employeeForm input[type="text"],
+#employeeForm input[type="number"],
+#employeeForm select {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#addEmployeeBtn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addEmployeeBtn:hover {
+    background-color: #0056b3;
+}
+
+#warningMessage {
+    margin-top: 10px;
+}
